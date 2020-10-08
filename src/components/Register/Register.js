@@ -7,15 +7,15 @@ class Register extends React.Component {
     name: "",
   };
 
-  onNameChange = event => {
+  onNameChange = (event) => {
     this.setState({ name: event.target.value });
   };
 
-  onEmailChange = event => {
+  onEmailChange = (event) => {
     this.setState({ email: event.target.value });
   };
 
-  onPasswordChange = event => {
+  onPasswordChange = (event) => {
     this.setState({ password: event.target.value });
   };
 
@@ -29,9 +29,9 @@ class Register extends React.Component {
         name: this.state.name,
       }),
     })
-      .then(response => response.json())
-      .then(user => {
-        if (user) {
+      .then((response) => response.json())
+      .then((user) => {
+        if (user.id) {
           this.props.loadUser(user);
           this.props.onRouteChange("home");
         }
