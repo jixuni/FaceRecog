@@ -4,6 +4,8 @@
 
 Face Recog is a fun little application that can detect the face of pictures. It uses an a.i technologies to accurately detect where the face is on a picture.
 
+https://face-recogni-frontend.herokuapp.com/
+
 ## How to use && Future updates
 
 Pass an url of a picture into the input bar and detech away!
