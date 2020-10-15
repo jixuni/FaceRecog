@@ -1,3 +1,5 @@
+CREATE DATABASE test;
+use test;
 
 --Create table users
 CREATE TABLE users
